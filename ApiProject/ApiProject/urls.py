@@ -19,9 +19,9 @@ from django.urls import re_path as url
 #from django.conf.urls import url
 from ApiApplication import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     url("dqn/", include('ApiApplication.urls')),
-    url("policy/",include('policy.urls'))
+   url("policy/",include('policy.urls')),
+   url("", include('landing.urls'))
 ]

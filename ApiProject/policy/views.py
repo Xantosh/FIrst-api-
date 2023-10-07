@@ -41,7 +41,7 @@ class Train(APIView):
     def get(self, request):
        # policy_learn.calc_action((0,0))
        # policy_learn.get_reward(5)
-        print("policy states",policy_learn.states)
+      #  print("policy states",policy_learn.states)
 
         policy_learn.update_network()
         return Response({"Message":"Updated the neural network"})
