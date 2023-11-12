@@ -5,7 +5,7 @@ from .emotion import EmotionAnalyzer
 
 class GetEmotion(APIView):
     def get(self,request):
-        return Response({"Message":"Send a post request with sentence that you nedd emotion to "})
+        return Response({"Message":"Send a post request with sentence that you nedd emotion to. Keys: sentence "})
     
     def post(self,request):
         emotionAnalyzer = EmotionAnalyzer()
